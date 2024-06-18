@@ -8,7 +8,7 @@ try{
 
     chrome.runtime.onInstalled.addListener(() => {
         chrome.tabs.create({ url: "chrome-extension://"+extid+"/extensibles/options.html"})
-        chrome.storage.local.set({apikey: "7Y3N3KmVF26TSy8ozgEoU1P9eRJQvu97DVJc5c12MRUp0Gi9aS5OlUsC2K9r16mfOlVNZjbhjLyG4WI7"})
+        chrome.storage.local.set({apikey: "YOURKEYHERE"})
     });
 
     function pageLoad(tabId, changeInfo, tab){

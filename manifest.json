@@ -1,0 +1,22 @@
+{
+    "name": "SimpleMMO damage counter",
+    "description": "SimpleMMO plugin that shows how much damage do you deal to enemy and vice versa",
+    "version": "1",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "tabs", "scripting"],
+    "action": {
+        "default_icon": {
+            "256": "./extensibles/simplemmo-swords.png"
+        }
+    },
+    "icons": {
+        "256": "./extensibles/simplemmo-swords.png"
+    },
+    "host_permissions": [
+        "https://web.simple-mmo.com/user/attack/*",
+        "http://web.simple-mmo.com/user/attack/*"
+    ]
+}
